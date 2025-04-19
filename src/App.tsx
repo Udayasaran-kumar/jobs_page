@@ -18,7 +18,7 @@ const App = () => {
       if (resp && Array.isArray(resp.results)) {
         setJob(prev => [...prev, ...resp.results]); 
       } else {
-        setError('Invalid data structure');  
+        setError('Page Ended,Please refresh or restart');  
       }
       setLoading(false);
     } catch (error) {
